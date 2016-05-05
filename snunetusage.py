@@ -1,4 +1,5 @@
-#TO login into snulinks internet usage details page and check anyone's internet usages
+#To login into snulinks internet usage details page and check anyone's internet usages
+#Script edited for total usage in one year
 import mechanize
 import os
 import cookielib
@@ -22,7 +23,7 @@ general_page = br.open("http://myaccount.snu.edu.in")
 br.select_form(nr = 0)
 username = raw_input("Enter the SNU NetID:- ")
 br["userNetId"] = username
-br["startDate"] = "2016-05-03"
+br["startDate"] = "2015-05-06"
 br["endDate"] = "2016-05-05"
 re = br.submit()
 rs = re.read()
