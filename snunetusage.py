@@ -4,8 +4,8 @@ import mechanize
 import os
 import cookielib
 
-auth_user = "YOUR_NETID"
-auth_pass = "YOUR_PASSWORD"
+auth_user = "abjkj "
+auth_pass = "m nlb"
 br = mechanize.Browser()
 cj = cookielib.LWPCookieJar()
 br.set_cookiejar(cj)
@@ -23,8 +23,8 @@ general_page = br.open("http://myaccount.snu.edu.in")
 br.select_form(nr = 0)
 username = raw_input("Enter the SNU NetID:- ")
 br["userNetId"] = username
-br["startDate"] = "2015-05-06"
-br["endDate"] = "2016-05-05"
+br["startDate"] = "2015-08-20"
+br["endDate"] = "2016-08-21"
 re = br.submit()
 rs = re.read()
 f = open("usage.html",'w')
